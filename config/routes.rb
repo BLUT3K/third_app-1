@@ -1,10 +1,8 @@
 ThirdApp::Application.routes.draw do
-  get "user/new"
 
-  resources :users
   
-  
-  match '/signup', to: 'users#new'
+
+ mtach '/signup', to: 'users#new'
 
   match '/help', to: 'static_pages#help' #this creates route help_path
   match '/about', to: 'static_pages#about' #this creates route about_path
